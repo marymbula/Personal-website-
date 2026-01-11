@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mbula | Personal Portfolio</title>
+
+    <!-- ===== CSS (STYLING) ===== -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        section {
+            background-color: white;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 8px;
+            margin: 5px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <h2>Mbula</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ===== HOME ===== -->
+    <section id="home" class="hero">
+        <h1>Hello, I'm Mbula 👋</h1>
+        <p>IT Student | Web Developer</p>
+        <button onclick="showMessage()">Hire Me</button>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p id="aboutText">
+            I am an IT student passionate about web development and operating systems.
+        </p>
+        <button onclick="changeText()">Read More</button>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Linux</span>
+            <span>Windows</span>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>✔ Personal Portfolio Website</p>
+        <p>✔ Student Website</p>
+        <p>✔ JavaScript Mini Projects</p>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: mbula@email.com</p>
+        <p>GitHub: github.com/mbula</p>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>© 2026 Mbula | All Rights Reserved</p>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        function showMessage() {
+            alert("Thank you for your interest! Please contact me 😊");
+        }
+
+        function changeText() {
+            document.getElementById("aboutText").innerHTML =
+                "I am learning full-stack web development using HTML, CSS, and JavaScript 🚀";
+        }
+    </script>
+
+</body>
+</html>
